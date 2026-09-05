@@ -6,7 +6,9 @@ A static, mobile-friendly library of company analysis reports with inspectable e
 
 https://MarginallyHarmless.github.io/stock_analysis_v2/
 
-The index contains real company research only. SOFI includes the original checklist, peer comparisons, valuation scenarios, dated evidence, and explicit data gaps. Its evidence appendix supports search, type filters, pagination, expandable records, and direct citation dialogs.
+The index contains real company research only. SOFI and META include the original checklist, peer comparisons, valuation scenarios, dated evidence, and explicit data gaps. Their evidence appendices support search, type filters, pagination, expandable records, and direct citation dialogs.
+
+The [META case study](reports/meta-dd813908e2d1dfd7/2026-09-05-d1e98e5d3e676ba4/report.html) uses research available on September 5, 2026 and includes the corrected official company logo in the library. It provides independent English/Romanian and Beginner/Experienced controls, three valuation scenarios, and comparisons with Alphabet, Pinterest, and Snap. Historical valuation and peer valuation gaps remain explicit.
 
 ## Files
 
