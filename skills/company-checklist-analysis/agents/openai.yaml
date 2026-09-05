@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Checklist Analysis"
+  short_description: "Company research with traceable facts and valuation"
+  default_prompt: "Use $company-checklist-analysis to analyse a company or ticker with current verified evidence and create a thorough, mobile-friendly HTML report."

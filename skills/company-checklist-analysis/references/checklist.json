@@ -1,0 +1,301 @@
+{
+  "sections": [
+    {
+      "id": "0",
+      "en": "Preparation",
+      "ro": "Pregătire",
+      "checks": [
+        {
+          "id": "C00.1",
+          "en": "Structural industry transformation",
+          "ro": "Transformare structurală a industriei"
+        },
+        {
+          "id": "C00.2",
+          "en": "Company and competitor research",
+          "ro": "Documentarea companiei și a concurenților"
+        },
+        {
+          "id": "C00.3",
+          "en": "Initial investment assessment",
+          "ro": "Prima impresie asupra investiției"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "en": "Business profile",
+      "ro": "Profilul afacerii",
+      "checks": [
+        {
+          "id": "C01.1",
+          "en": "Understand how the company makes money",
+          "ro": "Înțelegerea modelului de afaceri"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "en": "Revenue composition",
+      "ro": "Împărțirea veniturilor",
+      "checks": [
+        {
+          "id": "C02.1",
+          "en": "Revenue by business segment",
+          "ro": "Venituri pe segmente"
+        },
+        {
+          "id": "C02.2",
+          "en": "Geographic revenue and geopolitical exposure",
+          "ro": "Venituri geografice și expunere geopolitică"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "en": "Management and ownership",
+      "ro": "Management și acționariat",
+      "checks": [
+        {
+          "id": "C03.1",
+          "en": "CEO and management execution history",
+          "ro": "Istoricul CEO-ului și al echipei"
+        },
+        {
+          "id": "C03.2",
+          "en": "Management ownership and alignment",
+          "ro": "Deținerile managementului și alinierea intereselor"
+        },
+        {
+          "id": "C03.3",
+          "en": "Insider share purchases",
+          "ro": "Achizițiile de acțiuni ale insiderilor"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "en": "Competitive advantage",
+      "ro": "MOAT — avantaj competitiv",
+      "checks": [
+        {
+          "id": "C04.1",
+          "en": "Pricing power and market position",
+          "ro": "Putere de stabilire a prețurilor și poziție pe piață"
+        },
+        {
+          "id": "C04.2",
+          "en": "High and stable gross margins",
+          "ro": "Marje brute ridicate și stabile"
+        },
+        {
+          "id": "C04.3",
+          "en": "High and stable ROIC",
+          "ro": "ROIC ridicat și stabil"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "en": "Strengths, opportunities and risks",
+      "ro": "Puncte forte, oportunități și riscuri",
+      "checks": [
+        {
+          "id": "C05.1",
+          "en": "Explicit strengths and opportunities",
+          "ro": "Puncte forte și oportunități explicite"
+        },
+        {
+          "id": "C05.2",
+          "en": "Explicit weaknesses and risks",
+          "ro": "Puncte slabe și riscuri explicite"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "en": "Capital intensity",
+      "ro": "Intensitatea capitalului",
+      "checks": [
+        {
+          "id": "C06.1",
+          "en": "CAPEX / revenue",
+          "ro": "CAPEX / venituri"
+        },
+        {
+          "id": "C06.2",
+          "en": "CAPEX / operating cash flow",
+          "ro": "CAPEX / flux de numerar operațional"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "en": "Capital allocation",
+      "ro": "Alocarea capitalului",
+      "checks": [
+        {
+          "id": "C07.1",
+          "en": "Use of free cash flow",
+          "ro": "Utilizarea fluxului de numerar liber"
+        },
+        {
+          "id": "C07.2",
+          "en": "ROIC above 15%",
+          "ro": "ROIC peste 15%"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "en": "Balance sheet",
+      "ro": "Bilanțul contabil",
+      "checks": [
+        {
+          "id": "C08.1",
+          "en": "Cash compared with debt",
+          "ro": "Numerar comparativ cu datoriile"
+        },
+        {
+          "id": "C08.2",
+          "en": "Interest coverage above 10×",
+          "ro": "Acoperirea dobânzii peste 10×"
+        },
+        {
+          "id": "C08.3",
+          "en": "Net debt / FCF below 4×",
+          "ro": "Datorie netă / FCF sub 4×"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "en": "Profitability",
+      "ro": "Rentabilitate",
+      "checks": [
+        {
+          "id": "C09.1",
+          "en": "Gross margin",
+          "ro": "Marja brută"
+        },
+        {
+          "id": "C09.2",
+          "en": "Free cash flow margin",
+          "ro": "Marja fluxului de numerar liber"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "en": "Historical growth",
+      "ro": "Creștere istorică",
+      "checks": [
+        {
+          "id": "C10.1",
+          "en": "Revenue CAGR above 5% over 5 and 10 years",
+          "ro": "Creșterea veniturilor peste 5% pe 5 și 10 ani"
+        },
+        {
+          "id": "C10.2",
+          "en": "EPS CAGR above 7% over 5 and 10 years",
+          "ro": "Creșterea EPS peste 7% pe 5 și 10 ani"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "en": "Growth outlook",
+      "ro": "Perspective de creștere",
+      "checks": [
+        {
+          "id": "C11.1",
+          "en": "Company exposure to a secular trend",
+          "ro": "Expunerea companiei la un trend secular"
+        },
+        {
+          "id": "C11.2",
+          "en": "Revenue and EPS forecasts; high-growth guides of 20% and 15%",
+          "ro": "Estimări venituri și EPS; repere high-growth de 20% și 15%"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "en": "Valuation",
+      "ro": "Evaluare",
+      "checks": [
+        {
+          "id": "C12.1",
+          "en": "Current P/E versus five-year historical average",
+          "ro": "P/E actual față de media istorică pe cinci ani"
+        },
+        {
+          "id": "C12.2",
+          "en": "Appropriate valuation measure for the business",
+          "ro": "Indicator de evaluare potrivit afacerii"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "en": "Peer comparison",
+      "ro": "Comparație cu concurenții",
+      "checks": [
+        {
+          "id": "C13.1",
+          "en": "Compare the same criteria across direct peers",
+          "ro": "Comparație pe aceleași criterii cu rivalii direcți"
+        },
+        {
+          "id": "C13.2",
+          "en": "Assess relative industry leadership",
+          "ro": "Evaluarea poziției relative de lider"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "en": "Share-price history",
+      "ro": "Evoluția prețului acțiunii",
+      "checks": [
+        {
+          "id": "C14.1",
+          "en": "Historical performance and evidence for future runway",
+          "ro": "Performanța istorică și dovezi pentru potențialul viitor"
+        }
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "id": "O1",
+      "en": "Short interest",
+      "ro": "Poziții short"
+    },
+    {
+      "id": "O2",
+      "en": "Options put/call ratio",
+      "ro": "Raport opțiuni PUT/CALL"
+    },
+    {
+      "id": "O3",
+      "en": "Trading volume and liquidity",
+      "ro": "Volum de tranzacționare și lichiditate"
+    },
+    {
+      "id": "O4",
+      "en": "Online interest",
+      "ro": "Interes online"
+    },
+    {
+      "id": "O5",
+      "en": "Institutional interest",
+      "ro": "Interes instituțional"
+    },
+    {
+      "id": "O6",
+      "en": "Final technical analysis",
+      "ro": "Analiză tehnică finală"
+    }
+  ]
+}

@@ -22,3 +22,16 @@ Reports retain their research cutoff and quote dates. Publishing or restyling do
 GitHub Pages publishes the root of the `main` branch. Commit updated static files and push to `main`; GitHub rebuilds the site automatically. Keep the registry and every referenced report/history path together, and exclude fictional samples and local working files.
 
 There is no package installation or application build. You can open `index.html` locally, or serve this directory with `python -m http.server 8000`.
+
+## Reusable company-analysis skill
+
+`skills/company-checklist-analysis/` contains the complete skill, original checklist, research method, Python renderers, HTML/CSS/JavaScript assets, and synthetic test fixture. Copy this folder into your Codex skills directory to install it.
+
+The portable default library is `~/company-reports`. To write to this repository, pass its absolute path explicitly:
+
+```text
+python skills/company-checklist-analysis/scripts/report.py validate PATH/research.json
+python skills/company-checklist-analysis/scripts/report.py render PATH/research.json --output PATH/report.html --library ABSOLUTE_REPOSITORY_PATH
+```
+
+New reports retain every checklist item and threshold, use concise visible findings with expandable reasoning, place scenarios in section 12 and peer comparisons in section 13, and keep all calculation inputs accessible. SOFI includes the English/Romanian switch and defaults its appendix to 112 key records, with all 313 records searchable. This layout update preserves the original financial cutoff and evidence.

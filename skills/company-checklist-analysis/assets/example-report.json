@@ -1,0 +1,1345 @@
+{
+  "schema_version": 1,
+  "demo": true,
+  "company": {
+    "name": "Alder Instruments",
+    "ticker": "DEMO",
+    "exchange": "Fictional listing",
+    "share_class": "Illustrative ordinary shares",
+    "currency": "USD · reporting and trading",
+    "industry": "Fictional precision instruments"
+  },
+  "report": {
+    "language": "en",
+    "as_of": "2026-09-05T12:00:00+03:00",
+    "prepared_at": "2026-09-05T12:30:00+03:00",
+    "freshness_checked_at": "2026-09-05T12:20:00+03:00",
+    "financial_period": "FY2025 · synthetic fixture",
+    "horizon": "Five years · illustrative scenarios",
+    "subtitle": "A clear investment case, with the evidence close at hand.",
+    "research_status": "partial",
+    "quote_evidence_id": "quote"
+  },
+  "sources": [
+    {
+      "id": "demo-source",
+      "title": "Synthetic report-design fixture",
+      "publisher": "Created solely for template testing",
+      "source_type": "Synthetic example",
+      "locator": "assets/example-report.json · invented values",
+      "url": null,
+      "published_at": null,
+      "date_note": "No publication date: these are invented test values.",
+      "accessed_at": "2026-09-05T12:00:00+03:00",
+      "verification": "demo"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "business",
+      "label": "Business model",
+      "display": "Precision instruments and service contracts",
+      "raw_value": null,
+      "kind": "reported",
+      "note": "Fictional business description, used only to demonstrate a readable report.",
+      "period": "FY2025",
+      "unit": "qualitative",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2020",
+      "label": "Revenue · FY2020",
+      "display": "$669m",
+      "raw_value": 669,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2020",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2021",
+      "label": "Revenue · FY2021",
+      "display": "$736m",
+      "raw_value": 736,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2021",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2022",
+      "label": "Revenue · FY2022",
+      "display": "$814m",
+      "raw_value": 814,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2022",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2023",
+      "label": "Revenue · FY2023",
+      "display": "$917m",
+      "raw_value": 917,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2023",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2024",
+      "label": "Revenue · FY2024",
+      "display": "$1,025m",
+      "raw_value": 1025,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2024",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "revenue-2025",
+      "label": "Revenue · FY2025",
+      "display": "$1,120m",
+      "raw_value": 1120,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "cfo",
+      "label": "Operating cash flow",
+      "display": "$248m",
+      "raw_value": 248,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "capex",
+      "label": "Cash capital expenditure",
+      "display": "$63m",
+      "raw_value": 63,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "cash",
+      "label": "Cash and equivalents",
+      "display": "$394m",
+      "raw_value": 394,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "2025-12-31",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "debt",
+      "label": "Interest-bearing debt",
+      "display": "$810m",
+      "raw_value": 810,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "2025-12-31",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "ebit",
+      "label": "Operating profit (EBIT)",
+      "display": "$216m",
+      "raw_value": 216,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "interest",
+      "label": "Gross interest expense",
+      "display": "$16.8m",
+      "raw_value": "16.8",
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "cogs",
+      "label": "Cost of revenue",
+      "display": "$669m",
+      "raw_value": 669,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "eps",
+      "label": "Diluted EPS",
+      "display": "$3.84",
+      "raw_value": "3.84",
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "FY2025",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ]
+    },
+    {
+      "id": "quote",
+      "label": "Observed share price",
+      "display": "$74.00",
+      "raw_value": 74,
+      "kind": "reported",
+      "note": "Synthetic illustration only; this is not reported company data.",
+      "period": "2026-09-04 regular close",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": [
+        "demo-source"
+      ],
+      "observed_at": "2026-09-04T16:00:00-04:00",
+      "session": "Synthetic regular close; not a market quote"
+    },
+    {
+      "id": "fcf",
+      "label": "Free cash flow",
+      "display": "$185.00m",
+      "raw_value": "185",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "cfo",
+          "capex"
+        ],
+        "formula": "FCF = operating cash flow − cash CAPEX = 248 − 63"
+      }
+    },
+    {
+      "id": "fcf-margin",
+      "label": "FCF margin",
+      "display": "16.52%",
+      "raw_value": "16.51785714285714285714285714",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "percent",
+        "inputs": [
+          "fcf",
+          "revenue-2025"
+        ],
+        "formula": "FCF margin = 185 / 1,120 × 100"
+      }
+    },
+    {
+      "id": "capex-sales",
+      "label": "CAPEX / revenue",
+      "display": "5.62%",
+      "raw_value": "5.62500",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "percent",
+        "inputs": [
+          "capex",
+          "revenue-2025"
+        ],
+        "formula": "CAPEX / revenue = 63 / 1,120 × 100"
+      }
+    },
+    {
+      "id": "capex-cfo",
+      "label": "CAPEX / operating cash flow",
+      "display": "25.40%",
+      "raw_value": "25.40322580645161290322580645",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "percent",
+        "inputs": [
+          "capex",
+          "cfo"
+        ],
+        "formula": "CAPEX / CFO = 63 / 248 × 100"
+      }
+    },
+    {
+      "id": "net-debt",
+      "label": "Net debt",
+      "display": "$416.00m",
+      "raw_value": "416",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "2025-12-31",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "debt",
+          "cash"
+        ],
+        "formula": "Net debt = interest-bearing debt − cash = 810 − 394"
+      }
+    },
+    {
+      "id": "coverage",
+      "label": "Interest coverage",
+      "display": "12.86×",
+      "raw_value": "12.85714285714285714285714286",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "ratio",
+        "inputs": [
+          "ebit",
+          "interest"
+        ],
+        "formula": "Coverage = EBIT / gross interest expense = 216 / 16.8"
+      }
+    },
+    {
+      "id": "leverage",
+      "label": "Net debt / FCF",
+      "display": "2.25×",
+      "raw_value": "2.248648648648648648648648649",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "ratio",
+        "inputs": [
+          "net-debt",
+          "fcf"
+        ],
+        "formula": "Net debt / FCF = 416 / 185"
+      }
+    },
+    {
+      "id": "gp",
+      "label": "Gross profit",
+      "display": "$451.00m",
+      "raw_value": "451",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "USD million",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "difference",
+        "inputs": [
+          "revenue-2025",
+          "cogs"
+        ],
+        "formula": "Gross profit = revenue − cost of revenue"
+      }
+    },
+    {
+      "id": "gm",
+      "label": "Gross margin",
+      "display": "40.27%",
+      "raw_value": "40.26785714285714285714285714",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2025",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "percent",
+        "inputs": [
+          "gp",
+          "revenue-2025"
+        ],
+        "formula": "Gross margin = gross profit / revenue × 100"
+      }
+    },
+    {
+      "id": "growth",
+      "label": "Five-year revenue CAGR",
+      "display": "10.86%",
+      "raw_value": "10.85578993072403673398772930",
+      "kind": "calculated",
+      "note": "Calculated from synthetic inputs; inspect the source chain before applying this method to real data.",
+      "period": "FY2020–FY2025",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "cagr",
+        "inputs": [
+          "revenue-2020",
+          "revenue-2025"
+        ],
+        "formula": "Revenue CAGR = (1,120 / 669)^(1/5) − 1, shown as %",
+        "years": 5
+      }
+    },
+    {
+      "id": "pe",
+      "label": "Price / FY2025 EPS",
+      "display": "19.27×",
+      "raw_value": "19.27083333333333333333333333",
+      "kind": "calculated",
+      "note": "Layout example only. FY2025 EPS has not been updated to TTM; this is not labelled trailing P/E. A real current report needs the latest available compatible earnings.",
+      "period": "Synthetic quote / FY2025 EPS",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "ratio",
+        "inputs": [
+          "quote",
+          "eps"
+        ],
+        "formula": "Price / FY2025 EPS = 74 / 3.84"
+      }
+    },
+    {
+      "id": "no-history",
+      "label": "Unresearched historical comparisons",
+      "display": "Not available",
+      "raw_value": null,
+      "kind": "unavailable",
+      "note": "This design fixture contains no ten-year history, historical EPS series, historical P/E or peer data.",
+      "period": "FY2025",
+      "unit": "qualitative",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "risk",
+      "label": "Principal unresolved risk",
+      "display": "Customer concentration",
+      "raw_value": null,
+      "kind": "judgment",
+      "note": "Illustrative research question, not a finding about a real company. A live report must establish customer exposure and contract terms.",
+      "period": "FY2025",
+      "unit": "qualitative",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "evidence_ids": [
+        "business"
+      ]
+    },
+    {
+      "id": "thesis",
+      "label": "Illustrative business assessment",
+      "display": "Cash-generative; durability unproven",
+      "raw_value": null,
+      "kind": "judgment",
+      "note": "Demonstrates a balanced judgment with traceable supporting evidence. The underlying data is synthetic.",
+      "period": "FY2025",
+      "unit": "qualitative",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "evidence_ids": [
+        "fcf-margin",
+        "business",
+        "risk"
+      ]
+    },
+    {
+      "id": "bear-eps",
+      "label": "Year-five diluted EPS",
+      "display": "$4.20",
+      "raw_value": "4.2",
+      "kind": "assumption",
+      "note": "Synthetic scenario assumption, not analyst consensus or management guidance.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "bear-pe",
+      "label": "Year-five P/E",
+      "display": "14×",
+      "raw_value": 14,
+      "kind": "assumption",
+      "note": "Synthetic terminal multiple assumption, with no peer or market support implied.",
+      "period": "Year 5",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "bear-price",
+      "label": "Illustrative future share price",
+      "display": "$58.80",
+      "raw_value": "58.8",
+      "kind": "calculated",
+      "note": "Undiscounted future share price, not present intrinsic value. Assumptions are synthetic. Dividends are excluded.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "product",
+        "inputs": [
+          "bear-eps",
+          "bear-pe"
+        ],
+        "formula": "Year-five price = assumed diluted EPS × assumed P/E"
+      }
+    },
+    {
+      "id": "bear-return",
+      "label": "Annualised price return",
+      "display": "-4.49%",
+      "raw_value": "-4.494337556773937777850780880",
+      "kind": "calculated",
+      "note": "Price return only. Dividends, taxes, fees and FX effects are excluded. Entire scenario is synthetic.",
+      "period": "Five years",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "cagr",
+        "inputs": [
+          "quote",
+          "bear-price"
+        ],
+        "formula": "Annualised price return = (future price / initial price)^(1/5) − 1, shown as %",
+        "years": 5
+      }
+    },
+    {
+      "id": "base-eps",
+      "label": "Year-five diluted EPS",
+      "display": "$5.60",
+      "raw_value": "5.6",
+      "kind": "assumption",
+      "note": "Synthetic scenario assumption, not analyst consensus or management guidance.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "base-pe",
+      "label": "Year-five P/E",
+      "display": "18×",
+      "raw_value": 18,
+      "kind": "assumption",
+      "note": "Synthetic terminal multiple assumption, with no peer or market support implied.",
+      "period": "Year 5",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "base-price",
+      "label": "Illustrative future share price",
+      "display": "$100.80",
+      "raw_value": "100.8",
+      "kind": "calculated",
+      "note": "Undiscounted future share price, not present intrinsic value. Assumptions are synthetic. Dividends are excluded.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "product",
+        "inputs": [
+          "base-eps",
+          "base-pe"
+        ],
+        "formula": "Year-five price = assumed diluted EPS × assumed P/E"
+      }
+    },
+    {
+      "id": "base-return",
+      "label": "Annualised price return",
+      "display": "6.38%",
+      "raw_value": "6.376516022750097822321156700",
+      "kind": "calculated",
+      "note": "Price return only. Dividends, taxes, fees and FX effects are excluded. Entire scenario is synthetic.",
+      "period": "Five years",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "cagr",
+        "inputs": [
+          "quote",
+          "base-price"
+        ],
+        "formula": "Annualised price return = (future price / initial price)^(1/5) − 1, shown as %",
+        "years": 5
+      }
+    },
+    {
+      "id": "bull-eps",
+      "label": "Year-five diluted EPS",
+      "display": "$6.90",
+      "raw_value": "6.9",
+      "kind": "assumption",
+      "note": "Synthetic scenario assumption, not analyst consensus or management guidance.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "bull-pe",
+      "label": "Year-five P/E",
+      "display": "22×",
+      "raw_value": 22,
+      "kind": "assumption",
+      "note": "Synthetic terminal multiple assumption, with no peer or market support implied.",
+      "period": "Year 5",
+      "unit": "multiple",
+      "basis": "Synthetic test fixture",
+      "source_ids": []
+    },
+    {
+      "id": "bull-price",
+      "label": "Illustrative future share price",
+      "display": "$151.80",
+      "raw_value": "151.8",
+      "kind": "calculated",
+      "note": "Undiscounted future share price, not present intrinsic value. Assumptions are synthetic. Dividends are excluded.",
+      "period": "Year 5",
+      "unit": "USD/share",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "product",
+        "inputs": [
+          "bull-eps",
+          "bull-pe"
+        ],
+        "formula": "Year-five price = assumed diluted EPS × assumed P/E"
+      }
+    },
+    {
+      "id": "bull-return",
+      "label": "Annualised price return",
+      "display": "15.45%",
+      "raw_value": "15.45374116464938802165655410",
+      "kind": "calculated",
+      "note": "Price return only. Dividends, taxes, fees and FX effects are excluded. Entire scenario is synthetic.",
+      "period": "Five years",
+      "unit": "percent",
+      "basis": "Synthetic test fixture",
+      "source_ids": [],
+      "calculation": {
+        "operation": "cagr",
+        "inputs": [
+          "quote",
+          "bull-price"
+        ],
+        "formula": "Annualised price return = (future price / initial price)^(1/5) − 1, shown as %",
+        "years": 5
+      }
+    }
+  ],
+  "summary": [
+    {
+      "text": "The fictional business converts part of its sales into free cash flow. Competitive durability remains unproven.",
+      "evidence_ids": [
+        "thesis",
+        "fcf-margin"
+      ],
+      "label": "Business quality."
+    },
+    {
+      "text": "The scenario range depends on earnings growth and the multiple investors might pay. The example supports no buy or sell conclusion.",
+      "evidence_ids": [
+        "bear-price",
+        "base-price",
+        "bull-price"
+      ],
+      "label": "At this illustrative price."
+    },
+    {
+      "text": "Interest coverage and net debt relative to FCF meet the checklist's numerical screens in the fixture.",
+      "evidence_ids": [
+        "coverage",
+        "leverage"
+      ],
+      "label": "Supporting evidence."
+    },
+    {
+      "text": "Customer concentration, maturities, peers and forward estimates have not been researched. Those gaps would materially limit a live investment case.",
+      "evidence_ids": [
+        "risk",
+        "no-history"
+      ],
+      "label": "Opposing evidence and gaps."
+    }
+  ],
+  "highlights": [
+    "revenue-2025",
+    "fcf-margin",
+    "coverage",
+    "leverage"
+  ],
+  "sections": [
+    {
+      "id": "0",
+      "intro": {
+        "text": "A full report would establish the industry thesis, source coverage and initial assessment here. This preview demonstrates the report format only.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C00.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C00.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C00.3",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "intro": {
+        "text": "The fictional company sells precision instruments and recurring service contracts. A live analysis would test the economics of each activity, who pays, and why customers stay.",
+        "evidence_ids": [
+          "business"
+        ]
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C01.1",
+          "status": "meets",
+          "explanation": "The fictional business model can be explained in plain language; economics still need verification in a real analysis.",
+          "evidence_ids": [
+            "business"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "intro": {
+        "text": "Segment, geographic and customer concentration tables belong here. Figures are intentionally absent because this fixture has no supporting disclosures.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C02.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C02.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "intro": {
+        "text": "Assess execution, economic and voting ownership, incentives, open-market insider purchases, and dilution. Separate share awards and options exercises from voluntary purchases.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C03.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C03.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C03.3",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "intro": {
+        "text": "Test whether margins and capital returns reflect a durable competitive advantage. A single profitable year does not establish a moat.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C04.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C04.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C04.3",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "intro": {
+        "text": "Cash conversion supports the illustrative case. Customer concentration remains an unanswered question that could change the interpretation.",
+        "evidence_ids": [
+          "fcf-margin",
+          "risk"
+        ]
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C05.1",
+          "status": "meets",
+          "explanation": "The preview states cash conversion as an illustrative strength and links the calculation.",
+          "evidence_ids": [
+            "fcf-margin"
+          ]
+        },
+        {
+          "id": "C05.2",
+          "status": "meets",
+          "explanation": "The preview makes an unresolved concentration risk explicit. This is a synthetic analytical example.",
+          "evidence_ids": [
+            "risk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "intro": {
+        "text": "The synthetic cash-flow bridge makes the method easy to inspect. Maintenance and growth investment would need separate discussion if the issuer disclosed them.",
+        "evidence_ids": [
+          "capex-sales",
+          "capex-cfo"
+        ]
+      },
+      "metrics": [
+        "capex-sales",
+        "capex-cfo"
+      ],
+      "checks": [
+        {
+          "id": "C06.1",
+          "status": "mixed",
+          "explanation": "The ratio is calculated, but no maintenance/growth split or peer context supports a favourable judgment.",
+          "evidence_ids": [
+            "capex-sales"
+          ]
+        },
+        {
+          "id": "C06.2",
+          "status": "mixed",
+          "explanation": "Cash CAPEX consumes part of CFO; a real assessment needs investment-cycle and peer context.",
+          "evidence_ids": [
+            "capex-cfo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "intro": {
+        "text": "A live report would trace reinvestment, acquisitions, dividends and buybacks. Share-count changes should show whether repurchases offset dilution or reduce shares for continuing owners.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C07.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C07.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "intro": {
+        "text": "The example meets both numerical coverage screens. That conclusion does not establish liquidity: debt maturities, refinancing terms and restrictions on cash remain unresearched.",
+        "evidence_ids": [
+          "coverage",
+          "leverage"
+        ]
+      },
+      "metrics": [
+        "coverage",
+        "leverage",
+        "cash",
+        "debt"
+      ],
+      "checks": [
+        {
+          "id": "C08.1",
+          "status": "mixed",
+          "explanation": "Debt exceeds cash in this fixture. Maturities and cash restrictions have not been researched.",
+          "evidence_ids": [
+            "cash",
+            "debt",
+            "net-debt"
+          ]
+        },
+        {
+          "id": "C08.2",
+          "status": "meets",
+          "explanation": "The synthetic EBIT / gross interest expense ratio exceeds the original 10× threshold. Accrual expense is used, not cash interest paid.",
+          "evidence_ids": [
+            "coverage"
+          ]
+        },
+        {
+          "id": "C08.3",
+          "status": "meets",
+          "explanation": "The synthetic ratio is below the original 4× threshold. Positive FCF permits the calculation.",
+          "evidence_ids": [
+            "leverage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "intro": {
+        "text": "These margins use the same synthetic fiscal year and a standardised operating-cash-flow-minus-CAPEX definition of free cash flow.",
+        "evidence_ids": [
+          "gm",
+          "fcf-margin"
+        ]
+      },
+      "metrics": [
+        "gm",
+        "fcf-margin"
+      ],
+      "checks": [
+        {
+          "id": "C09.1",
+          "status": "mixed",
+          "explanation": "The single-year gross margin is calculated; history and peers are needed to assess quality.",
+          "evidence_ids": [
+            "gm"
+          ]
+        },
+        {
+          "id": "C09.2",
+          "status": "mixed",
+          "explanation": "The single-year FCF margin is positive. Cash-flow durability remains untested.",
+          "evidence_ids": [
+            "fcf-margin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "intro": {
+        "text": "The five-year revenue series uses endpoints five fiscal years apart. Ten-year revenue history and historical EPS are absent, so the full growth criteria remain unresolved.",
+        "evidence_ids": [
+          "growth",
+          "no-history"
+        ]
+      },
+      "metrics": [
+        "growth"
+      ],
+      "checks": [
+        {
+          "id": "C10.1",
+          "status": "insufficient_evidence",
+          "explanation": "The synthetic five-year revenue CAGR exceeds 5%, but ten-year data is absent. The complete criterion remains unresolved.",
+          "evidence_ids": [
+            "growth",
+            "no-history"
+          ]
+        },
+        {
+          "id": "C10.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "intro": {
+        "text": "Link industry demand to company-specific growth and separate management guidance, external consensus and model assumptions. This preview includes no researched forecast.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C11.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C11.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "intro": {
+        "text": "The scenarios below vary assumed year-five EPS and P/E. Their outputs are future prices and annualised price returns, with assumptions and inputs available for inspection.",
+        "evidence_ids": [
+          "base-price",
+          "base-return"
+        ]
+      },
+      "metrics": [
+        "pe"
+      ],
+      "checks": [
+        {
+          "id": "C12.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C12.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "intro": {
+        "text": "Choose peers based on business model and economics, then compare all relevant criteria using matched periods and definitions. No actual peers were researched for this preview.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C13.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        },
+        {
+          "id": "C13.2",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "intro": {
+        "text": "A real report would plot adjusted price or total return against a relevant benchmark. The return convention, currency and date range must be explicit; no market-history series is included here.",
+        "evidence_ids": []
+      },
+      "metrics": [],
+      "checks": [
+        {
+          "id": "C14.1",
+          "status": "insufficient_evidence",
+          "explanation": "Not researched in this synthetic preview. A company report must supply the relevant original evidence or explain why the criterion cannot be assessed.",
+          "evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "id": "O1",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    },
+    {
+      "id": "O2",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    },
+    {
+      "id": "O3",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    },
+    {
+      "id": "O4",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    },
+    {
+      "id": "O5",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    },
+    {
+      "id": "O6",
+      "status": "insufficient_evidence",
+      "explanation": "Not researched for this synthetic design preview; no market signal is implied.",
+      "evidence_ids": []
+    }
+  ],
+  "peers": [],
+  "peer_note": "No peers were researched for this design preview. A live report would normally compare three to five justified peers, with comparable evidence.",
+  "scenarios": [
+    {
+      "key": "bear",
+      "name": "Bear · slower growth",
+      "assumptions": [
+        "bear-eps",
+        "bear-pe"
+      ],
+      "results": [
+        "bear-price",
+        "bear-return"
+      ],
+      "commentary": {
+        "text": "Changing both earnings and the terminal multiple shows the range of outcomes. These are illustrative future values; they are not an investment recommendation or a present fair-value estimate.",
+        "evidence_ids": [
+          "bear-price",
+          "bear-return"
+        ]
+      }
+    },
+    {
+      "key": "base",
+      "name": "Base · steady execution",
+      "assumptions": [
+        "base-eps",
+        "base-pe"
+      ],
+      "results": [
+        "base-price",
+        "base-return"
+      ],
+      "commentary": {
+        "text": "Changing both earnings and the terminal multiple shows the range of outcomes. These are illustrative future values; they are not an investment recommendation or a present fair-value estimate.",
+        "evidence_ids": [
+          "base-price",
+          "base-return"
+        ]
+      }
+    },
+    {
+      "key": "bull",
+      "name": "Bull · stronger adoption",
+      "assumptions": [
+        "bull-eps",
+        "bull-pe"
+      ],
+      "results": [
+        "bull-price",
+        "bull-return"
+      ],
+      "commentary": {
+        "text": "Changing both earnings and the terminal multiple shows the range of outcomes. These are illustrative future values; they are not an investment recommendation or a present fair-value estimate.",
+        "evidence_ids": [
+          "bull-price",
+          "bull-return"
+        ]
+      }
+    }
+  ],
+  "monitoring": [
+    {
+      "text": "Revisit the case if repeat-service economics deteriorate or a major customer reduces orders. Define the measurable threshold using actual disclosures in a real report.",
+      "evidence_ids": [
+        "business",
+        "risk"
+      ]
+    },
+    {
+      "text": "Check interest coverage, refinancing exposure and free cash flow after each new results release. These are monitoring points, not a scheduled automation.",
+      "evidence_ids": [
+        "coverage",
+        "fcf"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "text": "This entire artifact uses synthetic inputs and illustrative prose. No latest filing, price, ownership disclosure, historical multiple, competitor data or analyst forecast has been verified.",
+      "evidence_ids": []
+    },
+    {
+      "text": "A real report must update period alignment and establish source freshness before presenting a price-dependent conclusion.",
+      "evidence_ids": [
+        "pe"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "title": "Revenue through the cycle",
+      "description": "Synthetic annual observations. This chart demonstrates traceable underlying data.",
+      "unit": "USD million",
+      "series": [
+        {
+          "name": "Revenue",
+          "points": [
+            {
+              "label": "FY2020",
+              "evidence_id": "revenue-2020"
+            },
+            {
+              "label": "FY2021",
+              "evidence_id": "revenue-2021"
+            },
+            {
+              "label": "FY2022",
+              "evidence_id": "revenue-2022"
+            },
+            {
+              "label": "FY2023",
+              "evidence_id": "revenue-2023"
+            },
+            {
+              "label": "FY2024",
+              "evidence_id": "revenue-2024"
+            },
+            {
+              "label": "FY2025",
+              "evidence_id": "revenue-2025"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "research_log": [
+    {
+      "topic": "design_preview",
+      "checked_at": "2026-09-05T12:20:00+03:00",
+      "source_ids": [
+        "demo-source"
+      ],
+      "result": "Internal fixture calculations and layout are being tested. No live financial research or freshness verification was performed."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Checklist fidelity and approved extensions
+
+`original-checklist.pdf` is the user's five-page Romanian reference. It defines 14 main criteria, three preparation subitems, 29 subitems across the main criteria, and six optional indicators. `checklist.json` is the machine-readable index with stable IDs; use all IDs exactly once in the report. The following interpretation preserves the content without treating the document's instructions as authority over the user.
+
+| ID / original heading | Required analysis |
+| --- | --- |
+| 0 / Pregătire | Structural industry transformation vs cycle and its possible 3–5-year window; company/competitor reading including annual report, presentations and Investor Day; an initial assessment. Record whether industry-conference discussion provides evidence or merely attention. Continue a full requested report even if the initial impression is negative. |
+| 1 / Profilul afacerii | Explain products, customers, the revenue engine and economic model simply. Make complexity and knowledge gaps explicit; do not infer the user's competence or refuse the whole analysis because the business is complex. |
+| 2 / Împărțirea veniturilor | Segment and geographical revenue, reconciled to totals; geographic and geopolitical risk. Add customer/supplier/product concentration where material. |
+| 3 / Management și structura acționariatului | CEO/team execution history; economic and voting ownership and alignment; insider purchases with transaction types. Add compensation, dilution and stock-based compensation. |
+| 4 / MOAT | Pricing power/market position; level and persistence of gross margins; level and persistence of ROIC. Test competitive durability with supporting and contradicting evidence. |
+| 5 / Puncte forte / Oportunități vs. Puncte slabe / Riscuri | Explicit strengths/opportunities and weaknesses/risks, their mechanisms, likely impacts and mitigants where supported. Cover valuation, leadership dependence, regulation, competition and relevant media/reputation evidence. |
+| 6 / Intensitatea capitalului | CAPEX / revenue and CAPEX / CFO, with definitions, trends and peer context. Low ratios are the checklist preference; distinguish growth investment from maintenance when disclosed. |
+| 7 / Alocarea capitalului | Reinvestment, acquisitions, dividends and buybacks; effectiveness of capital deployment and ROIC above 15%. Add buybacks net of dilution and evidence of acquisition outcomes. |
+| 8 / Bilanțul contabil | Cash vs debt, EBIT / interest above 10×, net debt / FCF below 4×. Add liquidity, maturity schedule, refinancing exposure and disclosed covenants. Explain net cash and invalid denominators. |
+| 9 / Rentabilitatea | Gross margin and FCF margin with historical consistency and comparable definitions. Show reported/adjusted differences. |
+| 10 / Creștere istorică | Revenue CAGR above 5% and earnings/EPS CAGR above 7%, each over 5 and 10 elapsed years when available. Do not fabricate unavailable history. |
+| 11 / Outlook | Evidence of exposure to secular demand, with company-specific benefit and competitive limits. For high-growth firms, compare forecast revenue growth above 20% and EPS growth above 15%; identify provider, basis, horizon and assumptions. |
+| 12 / Evaluare | Current P/E vs reproducible five-year historical average; checklist preference for forward P/E in growth firms and trailing P/E in mature firms. Retain context and show sector-appropriate alternatives where P/E is unsuitable. Add bear/base/bull valuation, sensitivity and price-vs-value interpretation. |
+| 13 / Comparație între egali | Three to five justified direct peers where available. Compare revenue mix, management, allocation, capital intensity, financial health, profitability and valuation. Test whether the company leads on the relevant criteria, without assuming it does. |
+| 14 / Performanța istorică a prețului acțiunii | Historical share-price performance with adjustment/return conventions; discuss the evidence for remaining growth potential, including the checklist's aspirational 5–10-year runway. Past gains do not establish future runway. |
+| Optional | Short interest; options put/call ratio; trading volume/liquidity; online interest in company/products; institutional interest; final technical analysis. Use dated, correctly defined evidence; label omissions and reasons. |
+
+Use assessment statuses in context: `meets` means the specified test is supported, `mixed` means material positive and negative evidence, `does_not_meet` means supported failure, `insufficient_evidence` means the test cannot be established, and `not_applicable` needs a sector/company-specific explanation. Do not turn an unavailable optional indicator into a negative investment signal. An item about writing strengths/risks can be researched successfully while the actual business assessment is negative.
+
+The report must also include a short, balanced overview; a transparent evidence ledger; clear language and metric definitions; measurable thesis invalidation/monitoring points; visible data gaps; and a sources/calculations appendix. Keep all of these additions within the report's research purpose. No composite score, paid-data requirement, automated trade, public publishing, or scheduled monitoring is implied.
+
+In preparation, explicitly distinguish a structural opportunity from a cyclical rebound, address the proposed 3–5-year window, and state whether Investor Day and industry-conference material was reviewed or remains unavailable. In section 13, use a single matrix covering every original comparison dimension. Missing peer research remains a visible gap; an editorial update must not manufacture comparisons to fill cells.

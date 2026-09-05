@@ -1,0 +1,5 @@
+.language-switch{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line);border-radius:6px;order:2;margin-left:auto}
+.language-switch[hidden]{display:none}
+.language-switch button{border:0;border-radius:3px;padding:7px 12px;min-height:38px;min-width:44px;font-size:.75rem;font-weight:600}
+.language-switch button[aria-pressed="true"]{background:var(--accent);color:white}
+@media(max-width:520px){.topbar{gap:12px}.language-switch button{min-height:40px;padding:6px 10px}}
