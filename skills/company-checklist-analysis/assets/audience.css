@@ -10,7 +10,7 @@ html[data-audience="beginner"] .audience-experienced{display:none}
 .topbar>span{margin-right:auto}
 .reader-guide{background:#edf2e8;border-left:3px solid var(--accent);padding:24px;margin:24px 0}
 .reader-guide h2{font-size:1.15rem;margin-bottom:18px}
-.reader-guide p,.reader-glossary p{font-size:.88rem;max-width:70ch}
+.reader-guide p,.reader-glossary p{font-size:.88rem;max-width:none}
 .reader-guide p:last-child{margin-bottom:0}
 .reader-glossary{margin:16px 0 30px;border-bottom:1px solid var(--line)}
 .reader-glossary>summary{cursor:pointer;padding:14px 0;min-height:44px;font-size:.9rem}
