@@ -333,6 +333,8 @@ def validate(data):
                 if language not in ('en','ro'):raise ValueError('Only en/ro translations are supported')
                 localized(data,language)
             except (ValueError,KeyError,TypeError) as error:errors.append(str(error))
+    from audience import validate_audience
+    errors.extend(validate_audience(data))
     return list(dict.fromkeys(errors))
 
 
@@ -370,6 +372,9 @@ def _render_single(data, library_href=None):
         label = '<strong>' + esc(obj["label"]) + '</strong> ' if obj.get("label") else ""
         return '<p>' + label + esc(obj["text"]) + refs(obj.get("evidence_ids", [])) + '</p>'
 
+    from audience import Presentation
+    audience = Presentation(data, lang, clause, refs)
+
     def sparkline(eid):
         for chart_index, chart in enumerate(data.get("charts", [])):
             for series in chart.get("series", []):
@@ -387,7 +392,10 @@ def _render_single(data, library_href=None):
 
     def metric(eid):
         item = records[eid]
-        return '<div class="metric"><span class="metric-label">' + esc(item["label"]) + '</span><div class="metric-reading"><span class="metric-value">' + esc(item["display"]) + refs([eid]) + '</span>' + sparkline(eid) + '</div><small>' + esc(item["period"] + " · " + tr[item["kind"]]) + '</small></div>'
+        teaching = audience.guide.get('metrics', {}).get(eid) if audience.guide else None
+        metric_label = audience.pair(esc(teaching['label']), esc(item['label']), True) if teaching else esc(item['label'])
+        teaching_html = audience.pair('<p class="metric-teaching">' + esc(teaching['text']) + '</p>', '') if teaching else ''
+        return '<div class="metric"><span class="metric-label">' + metric_label + '</span><div class="metric-reading"><span class="metric-value">' + esc(item["display"]) + refs([eid]) + '</span>' + sparkline(eid) + '</div><small>' + esc(item["period"] + " · " + tr[item["kind"]]) + '</small>' + teaching_html + '</div>'
 
     def flow_diagrams(metric_ids):
         diagrams, seen = [], set()
@@ -427,7 +435,12 @@ def _render_single(data, library_href=None):
                 body += '<a class="section-reference" href="#section-' + esc(item['related_section']) + '">' + ('See section ' if lang == 'en' else 'Vezi secțiunea ') + esc(item['related_section']) + '</a>'
             if finding:
                 body += '<details class="analysis-detail check-detail"><summary>' + ('Full reasoning and evidence' if lang == 'en' else 'Raționament și dovezi complete') + '</summary><p>' + esc(item["explanation"]) + refs(item.get("evidence_ids", [])) + '</p></details>'
-            rows.append('<li class="check"><div class="check-top"><strong>' + esc(label) + '</strong><span class="status ' + item["status"] + '">' + esc(statuses[item["status"]]) + '</span></div>' + body + '</li>')
+            if audience.guide:
+                teaching = audience.guide['checks'][item['id']]
+                body = audience.pair(clause({**teaching, 'label': ''}), body)
+                label_html = audience.pair(esc(teaching['label']), esc(label), True)
+            else: label_html = esc(label)
+            rows.append('<li class="check"><div class="check-top"><strong>' + label_html + '</strong><span class="status ' + item["status"] + '">' + esc(statuses[item["status"]]) + '</span></div>' + body + '</li>')
         return '<ul class="checks">' + "".join(rows) + '</ul>'
 
     def block(title, body, anchor):
@@ -447,7 +460,12 @@ def _render_single(data, library_href=None):
     quote = records[report["quote_evidence_id"]]
     quote_html = '<div class="quote"><span>' + esc(tr["quote"]) + '</span><strong>' + esc(quote["display"]) + refs([quote["id"]]) + '</strong><small>' + esc(display_date(quote.get("observed_at", quote["period"]), lang) + " · " + quote.get("session", tr["unavailable"])) + '</small></div>'
     summary_points = '<div class="summary-grid">' + "".join('<article class="summary-point"><span class="summary-index">' + str(i+1).zfill(2) + '</span>' + clause(x) + '</article>' for i, x in enumerate(data["summary"])) + '</div>'
-    summary = block(tr["summary"], quote_html + '<div class="metrics highlights">' + "".join(metric(e) for e in data.get("highlights", [])) + '</div>' + summary_points, "overview")
+    if audience.guide:
+        summary_points = audience.pair('<div class="summary-grid">' + ''.join('<article class="summary-point">' + clause(c) + '</article>' for c in audience.guide['summary']) + '</div>', summary_points)
+    headline_metrics = '<div class="metrics highlights">' + ''.join(metric(e) for e in data.get('highlights', [])) + '</div>'
+    if audience.guide:
+        headline_metrics = audience.pair('<div class="metrics highlights">' + ''.join(metric(e) for e in audience.guide['highlights']) + '</div>', headline_metrics)
+    summary = block(tr["summary"], audience.orientation() + quote_html + headline_metrics + summary_points, "overview")
     main_sections = sorted((s for s in data["sections"] if s["id"] != "0"), key=lambda s: int(s["id"]))
     counts = {state: sum(c["status"] == state for s in main_sections for c in s["checks"]) for state in statuses}
     status_legend = '<div class="status-legend">' + "".join('<span><i class="status-dot ' + state + '" aria-hidden="true"></i>' + esc(statuses[state]) + '<b>' + str(count) + '</b></span>' for state, count in counts.items() if count) + '</div>'
@@ -458,7 +476,11 @@ def _render_single(data, library_href=None):
     for section in sorted(data["sections"], key=lambda s: int(s["id"])):
         title = '<span class="section-number">' + section["id"].zfill(2) + '</span><span>' + esc(section_map[section["id"]][lang]) + '</span>'
         # A concise finding stays visible for every item, including adverse and missing evidence.
-        body = clause(section["intro"]) + '<div class="metrics">' + "".join(metric(e) for e in section.get("metrics", [])) + '</div>' + checks(section["checks"]) + flow_diagrams(section.get("metrics", []))
+        body = clause(section["intro"]) + '<div class="metrics">' + "".join(metric(e) for e in section.get("metrics", [])) + '</div>' + checks(section["checks"])
+        if audience.guide:
+            teaching = audience.guide['sections'][section['id']]
+            title = '<span class="section-number">' + section['id'].zfill(2) + '</span><span>' + audience.pair(esc(teaching['label']), esc(section_map[section['id']][lang]), True) + '</span>'
+            body = audience.pair(clause({**teaching, 'label': ''}), clause(section['intro'])) + audience.pair('', '<div class="metrics">' + ''.join(metric(e) for e in section.get('metrics', [])) + '</div>') + checks(section['checks'])
         if section['id'] == '12': body += '<div id="valuation">__SCENARIO_TABLE__</div>'
         if section['id'] == '13': body += '<div id="peers">__PEER_TABLE__</div>'
         body += "__CHARTS_" + section["id"] + "__"
@@ -496,6 +518,15 @@ def _render_single(data, library_href=None):
     for sc in ordered_scenarios:
         for eid in sc['results']:result_notes.setdefault(records[eid]['note'], []).append(eid)
     scenarios += ''.join('<p>' + esc(note) + refs(ids) + '</p>' for note, ids in result_notes.items()) + '</details>'
+    if audience.guide:
+        peers = audience.pair(''.join(clause(c) for c in audience.guide['peers']), peers)
+        cards = '<div class="scenario-reading">'
+        for sc in ordered_scenarios:
+            teaching = audience.guide['scenarios'][sc['key']]
+            eid = sc['results'][0]
+            cards += '<article><h3>' + esc(teaching['label']) + '</h3><strong>' + esc(records[eid]['display']) + '</strong>' + refs([eid]) + clause({**teaching, 'label': ''}) + '</article>'
+        cards += '</div>'
+        scenarios = audience.pair(cards, scenarios)
     sections = [section.replace('__SCENARIO_TABLE__', scenarios).replace('__PEER_TABLE__', peers) for section in sections]
     charts = []
     section_charts = {}
@@ -537,6 +568,7 @@ def _render_single(data, library_href=None):
                 if key != 'evidence_ids': collect(value)
         elif isinstance(obj, list):
             for value in obj: collect(value)
+    if audience.guide: collect(audience.guide)
     for field in ('summary', 'monitoring', 'peer_table'): collect(data.get(field, []))
     for section in data['sections']:
         collect(section['intro']); key_evidence.update(section.get('metrics', []))
@@ -583,10 +615,13 @@ def _render_single(data, library_href=None):
     content = banner + hero + summary + "".join(charts) + checklist_map + analysis_controls + "".join(sections) + block(tr["monitor"], monitoring, "monitoring") + block(tr["gaps"], "".join(clause(x) for x in data["gaps"]), "gaps") + block(tr["optional"], checks(data["optional"]), "optional") + block(tr["evidence"], evidence_index, "evidence") + block(tr["sources"], "".join(source_html), "sources") + block(tr["log"], '<details class="supplemental"><summary>' + more + '</summary>' + log_html + '</details>', "research-log")
     css = (ROOT / "assets/report.css").read_text(encoding="utf-8")
     js = (ROOT / "assets/report.js").read_text(encoding="utf-8")
+    if audience.guide:
+        css += (ROOT / "assets/audience.css").read_text(encoding="utf-8")
+        js += (ROOT / "assets/audience.js").read_text(encoding="utf-8")
     if library_href:
         title = 'Company collection' if lang == 'en' else 'Colecția de companii'
         nav = nav.replace('>', '><a class="library-back" href="' + esc(library_href) + '">← ' + title + '</a>', 1)
-    return '<!doctype html><html lang="' + lang + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>' + esc(company["name"] + ' · ' + tr["report"]) + '</title><style>' + css + '</style></head><body><a class="skip-link" href="#report">' + esc(tr["skip"]) + '</a><div class="topbar"><span>' + esc(tr["report"]) + '</span></div><div class="layout">' + nav + '<main id="report">' + content + '</main></div><div id="evidence-tooltip" role="tooltip" hidden></div><dialog id="evidence-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title">' + esc(tr["evidence"]) + '</h2><button id="close-evidence" type="button">' + esc(tr["close"]) + '</button></div><div id="dialog-body"></div></dialog><script>' + js + '</script></body></html>'
+    return '<!doctype html><html lang="' + lang + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>' + esc(company["name"] + ' · ' + tr["report"]) + '</title><style>' + css + '</style></head><body><a class="skip-link" href="#report">' + esc(tr["skip"]) + '</a><div class="topbar"><span>' + esc(tr["report"]) + '</span>' + audience.controls() + '</div><div class="layout">' + nav + '<main id="report">' + content + '</main></div><div id="evidence-tooltip" role="tooltip" hidden></div><dialog id="evidence-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title">' + esc(tr["evidence"]) + '</h2><button id="close-evidence" type="button">' + esc(tr["close"]) + '</button></div><div id="dialog-body"></div></dialog><script>' + js + '</script></body></html>'
 
 
 def render(data, library_href=None):

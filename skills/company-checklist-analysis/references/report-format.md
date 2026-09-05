@@ -12,6 +12,10 @@ The report must work on narrow phones as well as desktop. Reflow navigation, met
 
 ## JSON schema, version 1
 
+### Beginner / Experienced switch
+
+New reports also provide the independent reading-level switch described in [reading-levels.md](reading-levels.md). Its `audience` object holds reviewed EN/RO teaching prose referencing the same evidence IDs. Beginner changes explanation and prioritization, not facts, status, risks or the valuation conclusion. Experienced retains the technical report. Legacy reports without authored teaching content remain renderable without a level switch.
+
 ### English / Romanian switch
 
 New reports include both languages in the same standalone HTML. Keep the canonical ledger prose in `report.language`, then add `translations` for the other language:

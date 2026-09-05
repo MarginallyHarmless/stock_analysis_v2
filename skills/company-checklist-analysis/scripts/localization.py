@@ -3,7 +3,7 @@ import copy,html,json,re
 from html.parser import HTMLParser
 
 FIELDS={'label','text','explanation','note','basis','period','unit','formula','result','description','financial_period','horizon','subtitle','industry','share_class','currency','session'}
-PROTECTED={'translations','sources','library','raw_value','id','source_ids','evidence_ids','inputs','operation','key','url','file','observed_at','prepared_at','as_of','freshness_checked_at','checked_at','topic','status','kind','quote_evidence_id','exchange','ticker','related_section','section_id'}
+PROTECTED={'audience','translations','sources','library','raw_value','id','source_ids','evidence_ids','inputs','operation','key','url','file','observed_at','prepared_at','as_of','freshness_checked_at','checked_at','topic','status','kind','quote_evidence_id','exchange','ticker','related_section','section_id'}
 
 def required_strings(data):
     values=set()

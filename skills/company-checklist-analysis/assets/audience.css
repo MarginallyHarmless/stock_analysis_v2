@@ -1,0 +1,31 @@
+.audience-beginner{display:none}
+html[data-audience="beginner"] .audience-beginner{display:block}
+html[data-audience="beginner"] span.audience-beginner{display:inline}
+html[data-audience="beginner"] .audience-experienced{display:none}
+.audience-switch{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--line);border-radius:6px;order:1}
+.audience-switch[hidden]{display:none}
+.audience-switch button{border:0;border-radius:3px;padding:7px 12px;min-height:40px;font-size:.75rem;font-weight:600}
+.audience-switch button[aria-pressed="true"]{background:var(--accent);color:white}
+.topbar{flex-wrap:wrap}
+.topbar>span{margin-right:auto}
+.reader-guide{background:#edf2e8;border-left:3px solid var(--accent);padding:24px;margin:24px 0}
+.reader-guide h2{font-size:1.15rem;margin-bottom:18px}
+.reader-guide p,.reader-glossary p{font-size:.88rem;max-width:70ch}
+.reader-guide p:last-child{margin-bottom:0}
+.reader-glossary{margin:16px 0 30px;border-bottom:1px solid var(--line)}
+.reader-glossary>summary{cursor:pointer;padding:14px 0;min-height:44px;font-size:.9rem}
+.reader-glossary dl{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+.reader-glossary dt{font-size:.86rem;font-weight:600;color:var(--ink)}
+.reader-glossary dd{margin:6px 0 0}
+.reader-glossary dd p>strong{display:none}
+.metric-teaching{font-size:.82rem!important;color:var(--ink)!important;line-height:1.65;margin:10px 0 0}
+.scenario-reading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0}
+.scenario-reading article{padding:18px;background:#edf2e8;border-top:2px solid #c0cfba;min-width:0}
+.scenario-reading h3{font-size:.85rem}
+.scenario-reading strong{font:1.5rem var(--mono)}
+.scenario-reading p{font-size:.85rem;margin:12px 0 0}
+html[data-audience="beginner"] .check>p,html[data-audience="beginner"] .check>.audience-beginner>p{font-size:.95rem;line-height:1.8}
+@media(max-width:620px){.reader-glossary dl,.scenario-reading{grid-template-columns:1fr}.topbar{gap:10px}.topbar>span{flex-basis:100%}.audience-switch{margin-right:auto}.language-switch{margin-left:0}.reader-guide{padding:18px}.audience-switch button{padding:7px 9px}}
+
+/* Beginner summaries have no index column. */
+.audience-beginner .summary-point{display:block;min-width:0}
